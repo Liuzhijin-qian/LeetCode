@@ -26,14 +26,14 @@ class Solution {
     int curEnd = 0, nextEnd = 0;
     int i = 0, n = clips.length;
     if (clips[0][0] != 0) return -1;
-    while (i < n) {
+    while (i < n && clips[i][0] <= curEnd) {
       while (i < n && clips[i][0] <= curEnd) {
         nextEnd = Math.max(nextEnd, clips[i][1]);
         i++; //指向的视频片段
       }
       res++;
       curEnd = nextEnd;
-      if (res >= time) {
+      if (curEnd >= time) {
         return res;
       }
     }
