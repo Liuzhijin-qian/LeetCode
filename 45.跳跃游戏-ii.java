@@ -34,6 +34,9 @@ class Solution {
       memo[p] = Math.min(memo[p], SubProblem + 1);
     }
     return memo[p];
+
+
+    
   }
 }
 // @lc code=end
