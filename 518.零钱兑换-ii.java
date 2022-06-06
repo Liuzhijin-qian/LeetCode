@@ -6,9 +6,7 @@
 
 // @lc code=start
 class Solution {
-    public int change(int amount, int[] coins) {
 
-    }
+  public int change(int amount, int[] coins) {}
 }
 // @lc code=end
-
